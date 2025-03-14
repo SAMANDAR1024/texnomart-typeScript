@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/component/Navbar";
 import Catigoria from "@/component/Catigoria";
+import SearchInput from "@/component/SearchInput";
+import GlobarSearch from "@/component/GlobarSearch";
+// import SearchInput from "@/component/SearchInputearchInput";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,9 +33,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
+        <GlobarSearch />
         <Catigoria />
         {children}
       </body>
     </html>
   );
 }
+
+

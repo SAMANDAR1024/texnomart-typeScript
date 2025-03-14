@@ -17,3 +17,21 @@ export type productsCatigoria = {
   axiom_monthly_price: string;
   image: string;
 };
+
+export type searchInputType = {
+  categories: {
+    id: number;
+    slug: string;
+    title: string;
+  }[];
+  models: {
+    id: number;
+    slug: string;
+    title: string;
+  }[];
+  products: {
+    id: number;
+    image: string;
+    name: string;
+  }[];
+};
